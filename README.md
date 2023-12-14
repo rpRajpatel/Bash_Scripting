@@ -1,1 +1,1 @@
-# Description for the Bash script I'm developing for daily tasks and practice.
+# Description for the Bash script that I'm writing
