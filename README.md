@@ -4,7 +4,9 @@
 
 - Create a folder.
 - Open the folder in VS-Code.
-- Clone the Git repository using the command: git clone {#copy the HTTP URL from the Git repository}
+- Clone the Git repository using the command: 
+
+                                          git clone #copy the HTTP URL
 
 ##  SSH Key: 
 
