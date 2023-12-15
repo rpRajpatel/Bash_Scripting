@@ -12,12 +12,14 @@ SSH Key: Link: https://docs.github.com/en/authentication/connecting-to-github-wi
          5.) Configure Git: 
                             Go to Git Settings > SSH key
                             Paste the copied key and assign a name
-         6.) Edit SSH configuration: vi .ssh/config
+         6.) Edit SSH configuration: a.) eval "$(ssh-agent -s)"
+                                     b.) vi .ssh/config # down is the config
+                                     c.) ssh-add -K ~/.ssh/id_rsa
              {
-                HostkeyAlgorithms +ssh-rsa,ssh-dss
-                PubkeyAcceptedKeyTypes +ssh-rsa
-
-                KexAlgorithms +diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
+                Host *
+                  AddKeysToAgent yes
+                  UseKeychain yes
+                  IdentityFile ~/.ssh/id_rsa
              }
          7.)
 
