@@ -22,12 +22,15 @@ Link: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/ge
     - eval "$(ssh-agent -s)"
     - vi .ssh/config # down is the config
     - ssh-add -K ~/.ssh/id_rsa
+ 
+     ```
              {
                 Host *
                   AddKeysToAgent yes
                   UseKeychain yes
                   IdentityFile ~/.ssh/id_rsa
              }
+    ```
 
        
 ##  Git Commands: 
