@@ -4,14 +4,14 @@
 
 - Create a folder.
 - Open the folder in VS-Code.
-- Clone the Git repository using the command: git clone <copy the HTTP URL from the Git repository>
+- Clone the Git repository using the command: git clone {#copy the HTTP URL from the Git repository}
 
 ##  SSH Key: 
 
 Link: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 
-- Generate SSH key: ssh-keygen -t rsa -b 4096 -C "<your_email address>" # You can provide a name or use the default (id_rsa)
+- Generate SSH key: ssh-keygen -t rsa -b 4096 -C "your_email address" # You can provide a name or use the default (id_rsa)
 - Navigate to the SSH directory: cd .ssh/
 - List the files: ls
 - Display the public key: cat id_rsa.pub # Copy the public key
