@@ -1,6 +1,6 @@
 # Bash Scripting
 
-##  Loacl machine to git:
+##  Local machine to git:
 
 - Create a folder.
 - Open the folder in VS-Code.
